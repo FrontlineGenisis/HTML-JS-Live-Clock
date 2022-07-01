@@ -85,8 +85,9 @@
 
       document.getElementById("clock").innerText = time;
       let t = setTimeout(function () {currentTime()}, 1000);
-    }
+      document.title = hh + ":" + mm + ":" + ss + " " + session;
 
+    }
     currentTime();
   </script>
 </body>
